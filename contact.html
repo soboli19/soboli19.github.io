@@ -1,16 +1,54 @@
 <!DOCTYPE html>
 <html>
-     <head>
-         <title>Alan Smithee</title>
-     </head>
-     <body>
-         <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="resume.html">Resume</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
+    <head>
+       <title>Alan Smithee</title>
+       <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <body>
+        <header>
+            <span class="logo">My WebSite</span>
+            <a id="toggleMenu">Menu<a></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-     </body>
+        <main>
+
+            <h1>Contact Alan Smithee</h1>
+            <form action="https://formspree.io/asmithee@mailinator.com" method="POST">
+
+                <div>
+                    <input type="hidden" name="_subject" value="New submission!">
+                </div>
+
+                <div>
+                    <label for="name">Name</label>
+                    <input id="name" type="text" name="name">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="text" name="_replyto">  
+                </div>
+
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" value="Send">
+                </div>
+
+                <input type="hidden" name="_next" value="//microtrain.github.io/thanks.html">
+            </form>
+        </main>
+
+    </body>
 </html>
