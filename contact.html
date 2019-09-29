@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <title>Alan Smithee</title>
+       <title>Iliya Sobolev</title>
        <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
@@ -20,7 +20,7 @@
 
         <main>
 
-            <h1>Contact Alan Smithee</h1>
+            <h1>Contact Iliya Sobolev</h1>
             <form action="https://formspree.io/asmithee@mailinator.com" method="POST">
 
                 <div>
@@ -50,5 +50,19 @@
             </form>
         </main>
 
+        <script>
+                var toggleMenu = document.getElementById('toggleMenu');
+                var nav = document.querySelector('nav');
+                toggleMenu.addEventListener(
+                  'click',
+                  function(){
+                    if(nav.style.display=='block'){
+                      nav.style.display='none';
+                    }else{
+                      nav.style.display='block';
+                    }
+                  }
+                );
+              </script>
     </body>
 </html>
