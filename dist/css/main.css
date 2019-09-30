@@ -1,105 +1,63 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/*
+Error: Undefined variable: "$success-color".
+        on line 30 of src/scss/main.scss
 
-* {
-  font-family: 'Open Sans', sans-serif;
-}
+25:       display: table;
+26:       clear: both;
+27:     }
+28:   }
+29:   .text-success {
+30:     color: $success-color;
+31:   }
+32:   
+33:   .text-error {
+34:     color: $error-color;
+35:   }
 
-body{
-    padding: 0;
-    margin: 0;
-}
-
-header {
-    height: 50px;
-    background: #000;
-    color: #fff;
-    padding: 0 .5rem 0 1rem;
-}
-
-header .logo{
-    line-height: 50px;
-    font-weight: bold;
-}
-
-nav {
-    float: right;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-nav ul li{
-    display: inline;
-}
-
-nav ul li a,
-nav ul li a:link,
-nav ul li a:visited{
-    display: inline-block;
-    padding: 0 .5rem;
-    color: #fff;
-    line-height: 50px;
-    text-decoration: none;
-}
-
-nav ul li a:hover{
-    background: #929292;
-}
-
-main {
-    /* Use a margin to center the page */
-    margin: 0 auto;
-
-    /* Set the width of the content */
-    width: 960px;
-
-    /* For smaller screens to not exceed the max screen width */
-    max-width: 90%;
-}
-
-.avatar {
-    border-radius: 50%; 
-    width: 150px;
-    height: 150px;
-    float: left; 
-    margin-right: 1em;
-}
-
-#toggleMenu {
-    display: none;
-}
-
-@media only screen and (max-width: 960px)  {
-    
-    header {
-        position: relative;
-      }
-    
-      #toggleMenu {
-        display: block;
-        float: right;
-        line-height: 50px;
-      }
-    
-      header {
-        position: relative;
-      }
-    
-      nav {
-        position: absolute;
-        display: none;
-        background: #000;
-        top: 50px;
-        left: 0;
-        right: 0;
-      }
-    
-      nav ul li a,
-      nav ul li a:link,
-      nav ul li a:visited{
-        display: block;
-        border-bottom: 1px solid #777;
-      }
+Backtrace:
+src/scss/main.scss:30
+/usr/lib/ruby/vendor_ruby/sass/script/tree/variable.rb:49:in `_perform'
+/usr/lib/ruby/vendor_ruby/sass/script/tree/node.rb:58:in `perform'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:397:in `visit_prop'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/vendor_ruby/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `map'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:168:in `visit_children'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:188:in `visit_root'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:159:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:36:in `css_tree'
+/usr/lib/ruby/vendor_ruby/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:387:in `run'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:63:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:52:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:19:in `parse!'
+/usr/bin/sass:8:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$success-color\".\A         on line 30 of src/scss/main.scss\A \A 25:       display: table;\A 26:       clear: both;\A 27:     }\A 28:   }\A 29:   .text-success {\A 30:     color: $success-color;\A 31:   }\A 32:   \A 33:   .text-error {\A 34:     color: $error-color;\A 35:   }"; }
