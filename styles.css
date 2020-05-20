@@ -1,0 +1,15 @@
+
+html {font-size: 100.01%}
+body {background-color: #DEDEDE; font: normal 0.75em/1.5 "Georgia", "Times New Roman", serif;} 
+ul#menu li {
+    display:inline;
+  }
+h1 {
+    border-bottom: 0.07142855em double #444; color: #000; font: normal 3.5em/2 "Georgia", sans-serif; text-align: center;}
+.center {
+    text-align: center;
+    font-size: 15px;
+  }
+h2, h3 {
+        text-align: center;
+      }
