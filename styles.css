@@ -1,9 +1,67 @@
 
 html {font-size: 100.01%}
-body {background-color: #DEDEDE; font: normal 0.75em/1.5 "Georgia", "Times New Roman", serif;} 
-ul#menu li {
-    display:inline;
-  }
+/*body {background-color: #DEDEDE; font: normal 0.75em/1.5 "Georgia", "Times New Roman", serif;} */
+  
+/* universal settings */
+* {
+    box-sizing: border-box; }
+  
+  body {
+    font: 100% "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    margin: 0 auto;
+    padding: 0;
+    width: 1170px; }
+  
+  * {
+    font-family: 'Open Sans', sans-serif; }
+  
+  body {
+    padding: 0;
+    margin: 0; }
+  
+  header {
+    height: 50px;
+    background: #000;
+    color: #fff;
+    padding: 0 .5rem 0 1rem; }
+  
+  header .logo {
+    line-height: 50px;
+    font-weight: bold; }
+  
+  nav {
+    float: right; }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  
+  nav ul li {
+    display: inline; }
+  
+  nav ul li a,
+  nav ul li a:link,
+  nav ul li a:visited {
+    display: inline-block;
+    padding: 0 .5rem;
+    color: #fff;
+    line-height: 50px;
+    text-decoration: none; }
+  
+  nav ul li a:hover {
+    background: #ddd;
+    color: black; }
+  
+  main {
+    /* Use a margin to center the page */
+    margin: 0 auto;
+    /* Set the width of the content */
+    width: 960px;
+    /* For smaller screens to not exceed the max screen width */
+    max-width: 90%; }
+  
 h1 {
     border-bottom: 0.07142855em double #444; color: #000; font: normal 3.5em/2 "Georgia", sans-serif; text-align: center;}
 .center {
@@ -13,3 +71,20 @@ h1 {
 h2, h3 {
         text-align: center;
       }
+
+main {
+        margin: 0 auto;
+        width: 960px;
+        max-width: 90%;
+    }
+
+section {
+        border-top: 1px solid #dedede;
+        padding: 20px 0 0; 
+       }
+
+
+@media only screen and (max-width: 960px)
+      header{
+          position: relative;
+      } 
