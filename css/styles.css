@@ -63,10 +63,14 @@ html {font-size: 100.01%}
     max-width: 90%; }
   
 h1 {
-    border-bottom: 0.07142855em double #444; color: #000; font: normal 3.5em/2 "Georgia", sans-serif; text-align: center;}
+    color: #111; font-family: "Tahoma", "Helvetica", "Droid Sans", sans-serif; letter-spacing: 1px;
+    font: normal 3.5em/2 "Georgia", sans-serif; text-align: center; margin: 0 auto; text-shadow: 2px 3px 2px #999;}
 .center {
+    /*border-bottom: 0.07142855em double #444 !important; color: #000; */
+    border-bottom-style: double; 
     text-align: center;
     font-size: 15px;
+    padding: 10px; 
   }
 h2, h3 {
         text-align: center;
