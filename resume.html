@@ -6,19 +6,22 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="The best thing about hello world is the greeting">
       <meta name="keywords" content="ull Stack Web and Hybrid Mobile Applications Developer">
-      <link rel="stylesheet" href="css/styles.css">
+      <!--<link rel="stylesheet" href="css/styles.css">-->
+      <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
       <style>
          .h {text-align: center;}
        </style>
     </head>
     <body> 
         <main>
-            <header>
+            <header >
+                <a id="toggleMenu">Menu<a>
+                <span class="logo">My WebSite</span>
                 <nav>
                     <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </header>
@@ -174,5 +177,20 @@
             </section>
 
         </main>
+        <script>
+
+            var toggleMenu = document.getElementById('toggleMenu');
+            var nav = document.querySelector('nav');
+            toggleMenu.addEventListener(
+              'click',
+              function(){
+                if(nav.style.display=='block'){
+                  nav.style.display='none';
+                }else{
+                  nav.style.display='block';
+                }
+              }
+            );
+          </script>  
     </body>
 </html>
