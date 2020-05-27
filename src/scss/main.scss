@@ -94,3 +94,49 @@ h1 {
       font-size: 15px;
       padding: 10px; 
     }
+
+*[class^="col-"]{
+   background: #D3D3D3;
+   border: 1px solid #808080;
+   padding: 2em 0;
+   color: #000000;
+   text-align: left;
+    }
+
+    .grid-2 {
+      display: grid;
+      /* smaller devices will only be 2 columns wide */
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-2 .col-1 {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .grid-2 .col-2 { 
+      /* Make the second column it's own full row */
+      grid-column: 2;
+      grid-row: 1;
+    }
+    
+.education {
+  text-align: left;
+}
+.eddate {
+  text-align: right;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
