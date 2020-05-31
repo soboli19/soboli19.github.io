@@ -96,47 +96,51 @@ h1 {
     }
 
 *[class^="col-"]{
-   background: #D3D3D3;
+   background: #FFFFFF;
    border: 1px solid #808080;
    padding: 2em 0;
    color: #000000;
    text-align: left;
     }
 
-    .grid-2 {
+.grid-2 {
       display: grid;
       /* smaller devices will only be 2 columns wide */
       grid-template-columns: repeat(2, 1fr);
     }
-    .grid-2 .col-1 {
+.grid-2 .col-1 {
       grid-column: 1;
       grid-row: 1;
     }
-    .grid-2 .col-2 { 
+.grid-2 .col-2 { 
       /* Make the second column it's own full row */
       grid-column: 2;
       grid-row: 1;
     }
+.clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+.float-left{
+      float: left;
+    }
     
-.education {
-  text-align: left;
-}
-.eddate {
-  text-align: right;
-}
-
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
+.float-right{
+      float: right;
+    }
+.edu h3{
+      text-transform: initial;
+      text-align: left;
+      font-style: normal;
+      clear: both;
+    }
+    
+.edu h4{
+      font-weight: bold;
+      padding: 0;
+      margin: 0;
+      font-size: 1.1rem;
+      margin-bottom: 1.1rem;
+    }
+.time {font-size: 0.75em; font-weight: normal; float: right; margin-top: 0; padding-top: 0; position: absolute; right: 0;} /* 16 / 20 */
